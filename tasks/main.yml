@@ -58,4 +58,4 @@
 
 - name: if ferm_fail2ban is True - restart fail2ban as well if ferm is reloaded
   service: name=fail2ban state=restarted
-  when: fermreloaded.changed and ferm_fail2ban
+  when: ferm_fail2ban
